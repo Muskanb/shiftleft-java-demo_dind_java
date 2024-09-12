@@ -17,6 +17,10 @@ public class Address {
     this.city = city;
     this.state = state;
     this.zipCode = zipCode;
+    this.userName = user;
+    this.latitude = lat;
+    this.location = location;
+    this.passportNumber = "number";
   }
 
   @Id
