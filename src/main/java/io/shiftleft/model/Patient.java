@@ -23,6 +23,10 @@ public class Patient {
     this.heartRate = heartRate;
     this.pulse_rate = pulseRate;
     this.bpDiastolic = bpDiastolic;
+    this.accessToken = accessToken;
+    this.userPassword = "password";
+    this.accountNumber = "number";
+    this.passportNumber = "passport";
   }
 
   @Id
