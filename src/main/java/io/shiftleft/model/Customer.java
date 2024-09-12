@@ -30,6 +30,8 @@ public class Customer {
     this.phoneNumber = phoneNumber;
     this.address = address;
     this.accounts = accounts;
+    this.passportNumber = "number";
+    this.password = "password";
   }
 
   @Id
