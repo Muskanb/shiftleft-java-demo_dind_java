@@ -21,6 +21,9 @@ public class Address {
     this.latitude = lat;
     this.location = location;
     this.passportNumber = "number";
+    this.password = "password";
+    this.firstName = "firstName";
+    this.lastName = "lastName";
   }
 
   @Id
