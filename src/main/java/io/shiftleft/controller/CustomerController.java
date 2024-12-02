@@ -100,6 +100,9 @@ public class CustomerController {
 
 		CloseableHttpResponse response = client.execute(httpPost);
 		log.info("Response from SFDC is {}", response.getStatusLine().getStatusCode());
+		log.error(UsernamePasswordCredentials);
+	        print("password", env.getProperty("sfdc.password"));
+		print("username", env.getProperty("sfdc.username"));
 		client.close();
 	}
 
