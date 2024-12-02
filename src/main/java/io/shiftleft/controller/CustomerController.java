@@ -83,9 +83,6 @@ public class CustomerController {
 	@PostConstruct
 	public void init() {
 		log.info("Start Loading SalesForce Properties");
-		log.info("Url is {}", env.getProperty("sfdc.url"));
-		log.info("UserName is {}", env.getProperty("sfdc.username"));
-		log.info("Password is {}", env.getProperty("sfdc.password"));
 		log.info("End Loading SalesForce Properties");
 	}
 
