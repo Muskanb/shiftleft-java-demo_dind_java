@@ -7,6 +7,10 @@ This is a demo application which provides a real world representation of a REST 
 
 
 
+
+
+
+
  $ git clone https://github.com/ShiftLeftSecurity/HelloShiftLeft.git
  $ cd HelloShiftLeft
  $ mvn clean package
