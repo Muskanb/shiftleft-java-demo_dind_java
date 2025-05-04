@@ -32,6 +32,7 @@ public class Customer {
     this.accounts = accounts;
     this.passportNumber = "number";
     this.password = "password";
+    this.height = "Height";
   }
 
   @Id
@@ -55,6 +56,8 @@ public class Customer {
   private String tin;
 
   private String phoneNumber;
+
+  private String height;
 
   @OneToOne(cascade = { CascadeType.ALL })
   private Address address;
@@ -158,12 +161,21 @@ public class Customer {
     this.accounts = accounts;
   }
 
+   public void setAddress(int height) {
+    this.height = height;
+  }
+
+  public void getHeight() {
+    return this.height;
+  }
+
+
   @Override
   public String toString() {
     return "Customer [id=" + id + ", customerId=" + customerId + ", clientId=" + clientId + ", firstName=" + firstName
         + ", lastName=" + lastName + ", dateOfBirth=" + dateOfBirth + ", ssn=" + ssn + ", socialInsurancenum="
         + socialInsurancenum + ", tin=" + tin + ", phoneNumber=" + phoneNumber + ", address=" + address + ", accounts="
-        + accounts + "]";
+        + accounts + ", height="+ height + "]";
   }
 
 }
